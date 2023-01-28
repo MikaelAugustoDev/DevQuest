@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(src/bg-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cabecalho {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 150px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.img-main {
+    display: flex;
+
+    padding: 30px;
+    gap: 50px;
+}
+
+.img-main img {
+    width: 600px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 250px;
+    margin-top: 40px;
+}
+
+.texts .title {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.texts .description {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font: 400;
+    margin-bottom: 20px;
+}
+
+
+.button button {
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font: 400;
+    color: hsl(257, 40%, 49%);
+    transition: 0.5s;
+}
+
+.button button:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.social-medias {
+
+    display: flex;
+    margin-right: 100px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.media {
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.media img {
+    width: 20px;
+    height: 20px;
+}
+
+.media img:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.media:hover {
+    border-color: hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-image: url(src/bg-mobile.svg);
+    }
+
+    .img-main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .texts {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .texts .title {
+        font-size: 15px;
+    }
+
+    .img-main img {
+        width: 300px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .media {
+        margin-right: 25px;
+    }
+}
